@@ -1,0 +1,19 @@
+nav{
+    display: flex;
+background-color: rgb(14, 15, 15);
+display: flex;
+justify-content: space-around;
+}
+
+nav ul{
+    display: flex;
+  
+}
+
+nav ul li{
+    color: aliceblue;
+    display: flex
+    ;justify-content: space-between;
+    padding: 20px;
+
+}
