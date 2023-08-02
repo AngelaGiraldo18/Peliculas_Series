@@ -1,196 +1,26 @@
-
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html>
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Trailers</title>
-  <link rel="stylesheet" href="/style/peliculas.css">
-<link rel="stylesheet" href="/style/style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-  <style>
-    .movie-container {
-      text-align: center;
-      margin-bottom: 30px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .movie-img {
-      width: 100%;
-      max-width: 400px;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-      transition: transform 0.3s ease-in-out;
-    }
-
-    .movie-img:hover {
-      transform: scale(1.1);
-    }
-
-    .btn-primary {
-      margin-top: 10px;
-    }
-
-    .modal-dialog {
-      max-width: 90%;
-    }
-
-    /* Modificar tamaño de la modal */
-    .modal-lg {
-      max-width: 800px;
-    }
-
-    nav{
-      margin-bottom: 20px;
-    }
-  </style>
+  <title>Buscador de Películas con Trailers</title>
+  <link rel="stylesheet" type="text/css" href="/style/style.css">
 </head>
 <body>
+
   <nav><img src="" alt="">
     <ul>
-    <li>Inicio</li>
-    <li>Peliculas</li>
-    <li>Series</li>
+  <a href="/series.html"><li>Series</li></a>
+  <a href="/peliculas.html"><li>Peliculas</li></a>
+  <a href="/inicio.html"><li>Inicio</li></a>
         </ul>
-        </nav>
+        </nav>                                                         
   <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <div class="movie-container">
-          <img class="movie-img" src="/img/serie1.jpg" alt="Dragon Ball">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalDragonBall">Ver trailer</button>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="movie-container">
-          <img class="movie-img" src="/img/serie2.jpg" alt="El Gato con Botas">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalElGato">Ver trailer</button>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="movie-container">
-          <img class="movie-img" src="/img/serie3.jpg" alt="Rambo">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalRambo">Ver trailer</button>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="movie-container">
-          <img class="movie-img" src="/img/serie4.jpg" alt="Los Vengadores">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalVengadores">Ver trailer</button>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="movie-container">
-          <img class="movie-img" src="/img/serie5.jpg" alt="Mario Bros">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalMarioBros">Ver trailer</button>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="movie-container">
-          <img class="movie-img" src="/img/serie6.jpg" alt="Dragon Ball">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalDragonBall">Ver trailer</button>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="movie-container">
-          <img class="movie-img" src="/img/serie7.jpg" alt="El Gato con Botas">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalElGato">Ver trailer</button>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="movie-container">
-          <img class="movie-img" src="/img/serie15.jpg" alt="Rambo">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalRambo">Ver trailer</button>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="movie-container">
-          <img class="movie-img" src="/img/serie8.jpg" alt="Los Vengadores">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalVengadores">Ver trailer</button>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="movie-container">
-          <img class="movie-img" src="/img/serie9.jpg" alt="Mario Bros">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalMarioBros">Ver trailer</button>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="movie-container">
-          <img class="movie-img" src="/img/serie10.jpg" alt="Dragon Ball">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalDragonBall">Ver trailer</button>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="movie-container">
-          <img class="movie-img" src="/img/serie11.jpg" alt="El Gato con Botas">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalElGato">Ver trailer</button>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="movie-container">
-          <img class="movie-img" src="/img/serie12.jpg" alt="Rambo">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalRambo">Ver trailer</button>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="movie-container">
-          <img class="movie-img" src="/img/serie13.jpg" alt="Los Vengadores">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalVengadores">Ver trailer</button>
-        </div>
-      </div>
-      <div class="col-md-4">
-        <div class="movie-container">
-          <img class="movie-img" src="/img/serie14.jpg" alt="Mario Bros">
-          <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModalMarioBros">Ver trailer</button>
-        </div>
-      </div>
+    <input type="text" id="searchInput" placeholder="Buscar una película...">
+    <ul id="resultsList"></ul>
+    <di v id="trailerContainer">
+      <iframe id="trailerFrame" width="560" height="315" src="" frameborder="0" allowfullscreen></iframe>
     </div>
   </div>
 
-  <!-- Modal Dragon Ball -->
-  <div class="modal fade" id="exampleModalDragonBall" tabindex="-1" aria-labelledby="exampleModalLabelDragonBall" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabelDragonBall">House of Cards</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/dNHUXxhOYl4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <!-- Modal El Gato con Botas -->
-  <div class="modal fade" id="exampleModalElGato" tabindex="-1" aria-labelledby="exampleModalLabelElGato" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabelElGato">Manifest</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-          <iframe width="100%" height="315" src="https://www.youtube.com/embed/hxJyt1oDyOA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Cerrar</button>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+  <script src="/index.js"></script>
 </body>
 </html>
-
-
-
-
-
-  
